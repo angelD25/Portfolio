@@ -1,0 +1,1029 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <title>My PortFolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+        <link type="text/css" rel="stylesheet" href="css/lightslider.css" /> <!--may not be necessary-->
+        
+        <!-- jquery link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+        <!-- popper link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+        <!-- javascript link -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        
+        <script src="js/lightslider.js"></script>
+        
+        <style type="text/css">
+            body {
+                <!-- background-image : url("C:\Users\Anjali5694\Desktop\front-end\Practice Test 2\images\sa.jpg");
+                -->
+            }
+            #main {
+                height:auto;
+                width:auto;
+                margin-top:auto;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:auto;
+                border: 2px solid grey;
+            }
+            #topnav {
+                width:100%;
+                <!-- background-color: yellow;
+                --> border: 0px solid #8B0000;
+                border-radius: 2px;
+                padding: 5px;
+                height:auto;
+                background: rgb(0, 0, 0);
+                background: rgb(0, 0, 0, 0);
+                opacity:0.7;
+            }
+            #head {
+                width:100%;
+                <!-- background-color: white;-->
+                 border: 0px solid grey;
+                <!-- height:auto;
+                --> 
+                position:relative;
+                margin: 0px 0px;
+                display:inline;
+                <!-- background-color: yellow;
+                -->
+            }
+            #navlogo {
+                position:relative;
+                height:50px;
+                width:60px;
+                float:left;
+                margin-top:-10px;
+                margin-left:-10px;
+                margin-right:0px;
+                margin-bottom:0px;
+                border: 0px solid grey;
+            }
+           <!-- #webname {
+                position:relative;
+                height:40px;
+                width:150px;
+                margin-top:15px;
+                margin-left:0px;
+                margin-right:0px;
+                margin-bottom:0px;
+                border: 1px solid grey;
+            }-->
+            #menu {
+                height:40px;
+                width:50px;
+                margin-top:10px;
+                margin-left:0px;
+                margin-right:10px;
+                margin-bottom:10px;
+                background-color: black;
+                position:relative;
+                border: 1px solid grey;
+                float:right;
+            }
+            #menu > span {
+                width: 25px;
+                height: 2px;
+                background-color: white;
+                margin: 4px 3px;
+                display:block;
+                border: 0px solid grey;
+                position:relative;
+            }
+            #mainnav {
+                border: 0px solid grey;
+                position : relative;
+                margin-top: -45px;
+                margin-left : 750px;
+                background: rgb(0, 0, 0);
+                background: rgb(0, 0, 0, 0.5);
+                <!-- margin-bottom:15px;
+                --> <!-- margin-left:260px;
+                --> <!-- margin-right:100px;
+                --> <!-- display:inline;
+                --> <!-- text-align:center;
+                --> <!-- float:center;
+                -->
+            }
+            #mainnav > ul {
+                list-style-type: none;
+                position:relative;
+                display:inline;
+                <!-- width:100%;
+                --> <!-- margin-left:15px;
+                --> <!-- <!-- padding-bottom:15px;
+                --> text-align:center;
+            }
+            #mainnav > ul > li {
+                <!-- width: 100%;
+                --> <!-- height:auto;
+                --> border: 2px solid #bbb;
+                <!-- position: relative;
+                --> <!-- display:inline;
+                -->
+            }
+            #mainnav > ul > li.active {
+                background-color:#FFA07A;
+            }
+            #home {
+                position:relative;
+                <!-- border:1px solid orange;
+                --> 
+              
+            }
+            #imagedp {
+                transition: transform .2s;
+                <!-- vertical-align:middle;
+                --> display:inherit;
+                margin-top:0vh;
+                border-radius :50%;
+                opacity:1;
+              
+                  width:50%;
+                <!-- margin-bottom:15vh;
+                --> <!-- float:right;
+                --> position:relative;
+            }
+            .zoom:hover {
+                transform: scale(1.25);
+            }
+            #overtext {
+                position:absolute;
+                bottom:0;
+                top:0;
+                
+                right: background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5);
+                color: rgb(99, 0, 0);
+                width: 40vw;
+                height:15%;
+                transition: .5s ease;
+                opacity:0;
+                font-family:Alike;
+                <!-- font-size: 5vw;
+                --> padding: 0;
+                text-align: center;
+            }
+            #home:hover > #overtext {
+                opacity: 1;
+            }
+            #overtext > h1 {
+                font-size:5vw;
+                dipslay:block;
+                position:relative;
+                margin:0;
+                padding:0;
+            }
+            #spinner {
+                position:relative;
+                width:40vw;
+                height:25%;
+                display:block;
+                bottom:15vh;
+                left:10vh;
+                border:0px solid grey;
+            }
+            #spinner > h2 {
+                font-family:Sofia;
+                font-size:5vw;
+                color:#cc3300;
+                position:relative;
+                display:block; 
+               <!-- background-color: rgb(0, 0, 0);
+                --> <!-- background-color: rgb(0, 0, 0, 0.5);
+                --> text-align:center;
+            }
+            .spinner-grow {
+                <!-- border-radius:100%;
+                --> height:8%;
+                width:8%;
+                position:relative;
+                display:inline-block;
+                left:2vw;
+                
+            }
+            #education {
+                position:relative;
+                display:block;
+                top:1vh;
+                width:100%;
+                border:0px solid yellow;
+               text-align:center;
+               margin:0 0 vw;
+              
+                <!-- padding-border:1vh solid grey;
+                -->
+            }
+            #education > h1 {
+                font-family:Corben;
+                font-size:5vh;
+                width:100%;
+                color:white;
+                background-color: rgb(0, 0, 0);
+                background-color: rgb(0, 0, 0, 0.5);
+                text-align:center;
+        
+            }
+            <!-- ed whole panel -->
+            #edpanel1, #edpanel2 {
+               
+                display:block;
+                height:78vh;
+                width:100%;
+               border:0px solid blue;
+               margin-top: 3vh;
+            }
+            <!-- ed header --> 
+            #edhead1, #edhead2 {
+                position:relative;
+                text-align:center;
+                width:100%;
+               
+            }
+            #edhead1 >h2, #edhead2>h2 {
+                font-family:Corben;
+                color:#b3003b;
+                font-size:2.5vw;
+                text-align:left;
+                <!-- background-color:#993366;
+                -->
+            }
+            #edhead1 > h2 > small, #edhead2>h2>small {
+                font-family:Corben;
+                font-size:2.5vw;
+                color:#000099;
+                
+            }
+            <!-- ed bodies -->
+            #ed1, #ed2 {
+               display:block;
+               height:auto;
+                width:100%;
+                position:relative;
+            }
+            #ed1 > h3, #ed2 > h3 {
+                font-family:Comic Sans MS, Comic Sans, cursive;
+                font-size:1.5vw;
+                color:#ff0066;
+                background-color:white;
+                position:inherit;
+            }
+            #courses1{
+                height:35vh;
+	           	width:100%;
+		        position:relative;
+		        display:inherit;
+		        border: 0vh solid grey;
+            }
+            #courses1>ol>li
+            {
+              display:none;
+            }
+            #courses1 > #inner2 > .carousel-item > img {
+               border-radius: 1vh;
+	           padding: 0vh;
+	            display:block;
+	        	height:35vh;
+		        width:100%;
+		        position:relative;
+		        border: 1px solid #4da6ff;
+		     
+		      
+            }
+           
+           #courses2{
+                height:35vh;
+	           	width:100%;
+	        	
+		        position:relative;
+		        display:inherit;
+		        border: 0vh solid grey;
+            }
+            #courses2>ol>li
+            {
+              display:none;
+            }
+			
+            #courses2 > #inner3 > .carousel-item > img {
+               border-radius: 1vh;
+	           padding: 0vh;
+	           position:relative;
+	            display:block;
+	        	height:35vh;
+		        width:100%;
+		        border: 1px solid #4da6ff;
+		       
+            }
+           
+           
+            #goals {
+               
+                width:100%;
+                top:0vh;
+                margin:0 0 vw;
+                position:relative;
+                border: 0vh solid grey;
+                text-
+                
+               align:center;
+                
+            }
+            #goals > h1 {
+                font-family:Corben;
+                font-size:5vh;
+                background-color: rgb(0, 0, 0);
+                background-color: rgb(0, 0, 0, 0.5);
+                text-align:center;
+                width:100%;
+                color:white;
+                display:block;
+                
+            }
+            #goals > .carousel-inner > .carousel-item > img {
+                border-radius: 1vh;
+                padding: 1vh;
+                position:relative;
+                height:72vh;
+                width:100%;
+             
+                border: 1vh solid #ffccb3;
+                <!-- bottom:10vh;
+                --> top:0vh;
+            }
+            .carousel-caption {
+                margin:0px 0px;
+                padding:0px 0px;
+                border: 0px solid #F08080;
+                left:0vw;
+                bottom:5vh;
+                height:35vh;
+                width:60vw;
+                font-family: Sofia;
+                color: #0000ff;
+            }
+            .carousel-caption > div, h1 {
+                font-size:3vw;
+            }
+            #projects {
+               
+                width:100%;
+                margin-top:2vh;
+                bottom:0vh;
+                position:relative;
+                border: 0px solid grey;
+             
+                 
+            }
+            #projects > h1 {
+                font-family:Corben;
+                font-size:5vh;
+                background-color: rgb(0, 0, 0);
+                background-color: rgb(0, 0, 0, 0.5);
+                text-align:center;
+                width:100%;
+                color:white;
+                display:block;
+            }
+            #innerinfo {
+                position:relative;
+                top:16%;
+                display:block;
+                width:100%;
+            }
+            #infobtns {
+                position:relative;
+                <!-- margin-top:15px;
+                --> <!-- border: 0px solid grey;
+                --> 
+                height:100%;
+                width:100%;
+                transition: 0.4s;
+                cursor: pointer;
+               
+                <!-- text-align:center;
+                -->
+            }
+            #infobtns > button {
+                position:relative;
+                margin-left:0px;
+                margin-right:0px;
+                margin-top:0px;
+                margin-bottom:0px;
+                border: 1px solid grey;
+                width:100%;
+                height:6vh;
+                text-align:center;
+                display:block;
+                top:4%;
+                background-color: #c2f0c2;
+            }
+            <!-- .active --> <!-- {
+                --> <!-- background-color: #ccc;
+                --> <!--
+            }
+            --> #pane1, #pane2, #pane3, #pane4 {
+                position:relative;
+                width:100%;
+                <!-- height:50%;
+                --> border: 0px solid grey;
+                top:0;
+                padding:0px 20px 20px 20px;
+                overflow: hidden;
+                background-color: #ffe6e6;
+                max-height:0;
+                transition: max-height 0.2s ease-out;
+                
+            }
+            #pane1 > h3, #pane2 > h3, #pane3 > h3, #pane4 > h3 {
+                font-family:Palatino;
+                font-size:4vh;
+                <!-- text-align:center;
+                --> width:40%;
+                color:#002db3;
+            }
+            #pane1> a >img, #pane2> a >img {
+                position:relative;
+                width:100%;
+                height:55vh;
+                display:block;
+                border: 1px solid black;
+            }
+            #pane3 > iframe, #pane4 > iframe {
+                position:relative;
+                width:100%;
+                height:60vh;
+                display:block;
+                border: 1px solid black;
+            }
+            #info1, #info2, #info3, #info4 {
+                position:relative;
+                width:100%;
+                height:auto;
+                display:block;
+                border: 0vh solid grey;
+                margin-top:3vh;
+               
+            }
+            #info1 > p, #info2 > p, #info3 > p, #info4 > p {
+                font-family: corban;
+                
+                color:#996633;
+                position:relative;
+                display:block;
+                width:100%;
+                
+            }
+            #skill{
+                position:relative;
+                top:1vh;
+                bottom:0vh;
+                border-radius:4vh;
+                border:0vh solid #b3d9ff;
+                height:100%;
+                width:100%;
+                -webkit-animation: mymove 10s infinite;
+                animation: mymove 10s infinite;
+            }
+            @-webkit-keyframes mymove {
+                50% {
+                    width:90%;
+                }
+            }
+            @keyframes mymove {
+                50% {
+                    width:90%;
+                }
+            }
+            #skill > h1 {
+                position:inline;
+                font-family:Georgia, serif;
+                font-size2.5vw;
+            }
+            #skill > p {
+                position:inline;
+                margin-top:15px;
+               text-align:center;
+                margin-bottom:0px;
+                font-family:Georgia, serif;
+                font-size:1.9vw;
+            }
+            .skills {
+                text-align: right;
+                padding: 10px;
+                color: white;
+            }
+            .html {
+                
+                width: 90%;
+                background-color: #4CAF50;
+            }
+            .css {
+                width: 80%;
+                background-color: #2196F3;
+            }
+            .js {
+                width: 65%;
+                background-color: #f44336;
+            }
+            .json {
+                width: 60%;
+                background-color: #808080;
+            }
+            .assembly {
+                width: 70%;
+                background-color: #cccc00;
+            }
+            .CA {
+                width: 45%;
+                background-color: #cc7a00;
+                margin-bottom:20px;
+            }
+            #contact {
+                top:7vh;
+                position:relative;
+                bottom:4vh;
+                width:100%;
+                display:inline-block;
+                background:rgb(0, 0, 0);
+                background:rgb(0, 0, 0);
+                text-align:center;
+            }
+            #bottomnav {
+                position:relative;
+                display:inline;
+                width:98%;
+            }
+            #scrollbtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+               z-index: 99;
+                <!-- font-size: 18px;
+                --> border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 2px;
+                opacity:0.7;
+            }
+            #scrollbtn:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="scrolltop()" id="scrollbtn"><i class="material-icons" style="font-size:36px">open_in_browser</i>
+        </button>
+        
+        <div class="container-fluid view" id="main" style="background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Cool-photography-backgrounds-hd-PIC-WPD009980.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+
+            <nav class="navbar fixed-top" id="topnav">
+                <div class="container-fluid">
+                    <div class="navbar-header" id="head">
+                        <button type="button" class="navbar-toggle navbar-brand" data-toggle="collapse" data-target="#mainnav" id="menu" onclick="changestyle()">
+                            	<span></span>
+                            	<span></span>
+                            	<span></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="http://www.pixempire.com/images/preview/briefcase-icon.jpg" id="navlogo" />
+                        </a>
+                        <!-- <a class="navbar-brand text-success" href="#" id="webname">My Portfolio</a> -->
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="mainnav">
+                        <ul class="nav navbar-nav collapse navbar-collapse">
+                            <li>
+                                	<a href="#home"><i class="material-icons"  style="font-size:32px">home</i></a>
+                                <!--home-->
+                            </li>
+                            <li>
+                                	<a href="#goals"><i class="material-icons" style="font-size:36px">explore</i></a>
+                                <!--Goal-->
+                            </li>
+                            <li>
+                                	<a href="#education"><i class="material-icons" style="font-size:32px">school</i></a>
+                                <!--skills/education-->
+                            </li>
+                            <li>
+                                	<a href="#projects"><i class="material-icons" style="font-size:32px">content_copy</i></a>
+                                <!--projects-->
+                            </li>
+                            <li>
+                                	<a href="#skill"><i class="material-icons" style="font-size:32px">check_box</i></a>
+                                <!--progress-->
+                            </li>
+                            <li>
+                                	<a href="#contact"><i class="material-icons" style="font-size:32px">contacts</i></a>
+                                <!--contact/location-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <div class="container" id="home">
+              <!-- <img id="imagedp" src="../images/dp.jpg" > -->
+              
+                   <a href='https://photos.google.com/share/AF1QipMz7NpS6_rvZJYseJtM7CUlI0qw78ciujyHnKfphV9bynA5zNtqZMDJxsQM_NAxEg?key=SlJ3S0R3OXZFbjhvSC1WemRpZjYtdHdxaXg5T2x3&source=ctrlq.org'>
+                   <img alt="Profile pic" class="zoom" id="imagedp" src='https://lh3.googleusercontent.com/STx6ehIQGi4Bkw4uDkRT3Os79gm-S2sHlOp8yZduRRUf82OKqO_oHMDaQXijuxyC8CZUQvkScimTlEX0GoL1bvuneCoCzkZmx6NUxg9y32dL2b5s3uRyVmm3VlXWcXsjb8_RX-7yYJc=w2400' />
+                  </a>
+                 
+                 <a href="#" onclick="makesmall">small</a>
+                 
+                  <div id="overtext" class="overlay">
+                    	<h1 class="display-1">Anjali Tandel</h1>
+                    <!-- <p class="display-4 justify-content-center">Make Yourself<br> A Priority</p> -->
+                    </div>
+                
+                <div class="container" id="spinner">
+                    	<h2>Front End</h2>
+
+                    <div class="spinner-grow text-muted"></div>
+                    <div class="spinner-grow text-primary"></div>
+                    <div class="spinner-grow text-success"></div>
+                    <div class="spinner-grow text-info"></div>
+                    <div class="spinner-grow text-warning"></div>
+                    <div class="spinner-grow text-danger"></div>
+                    <div class="spinner-grow text-secondary"></div>
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-light"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="education">
+        	<h1 class="col-sm-12">Education</h1>
+            <div class="col-md-6" id="edpanel1">
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="edhead1">
+                        	<h2>M.S <small>Computer Science</small></h2>
+                    </div>
+
+                    <div class="panel-body" id="ed1" style="background-image: url('http://www.csueastbay.edu/aps/files/images/curriculum-development/csueb1.png">
+                        	<h3>California State University, East Bay</h3>
+                            <h3>2016-2019</h3>
+                            <h3>courses</h3>
+                           
+                            <div id="courses1" class="carousel sildes"  data-ride="carousel">
+                                <ol class="carousel-indicator" id="cs">
+                                    <li data-target="#courses1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#courses1" data-slide-to="1" ></li>
+                                    <li data-target="#courses1" data-slide-to="2" ></li>
+                                    <li data-target="#courses1" data-slide-to="3" ></li>
+                                    <li data-target="#courses1" data-slide-to="4" ></li>
+                                    <li data-target="#courses1" data-slide-to="5" ></li>
+                                </ol>
+                                <div class="carousel-inner" id="inner2">
+                                      <div class="carousel-item active">
+                                           <img src="https://juliandontcheff.files.wordpress.com/2017/09/dba30.png">
+                                        </div>
+                                    <div class="carousel-item">
+                                          <img src="http://williamstallings.com/OS/OS6e%20cover.jpg">
+                                     </div>
+                                     <div class="carousel-item">
+                                          <img src="https://www.hostpapa.co.uk/blog/wp-content/uploads/2015/09/10-Web-Design-Trends-for-2015.png">
+                                     </div>
+                                      <div class="carousel-item">
+                                          <img src="https://images-na.ssl-images-amazon.com/images/I/510MB5W8F4L.jpg">
+                                      </div>
+                                     <div class="carousel-item">
+                                         <img src="https://www.compusysesolutions.com/blog/wp-content/uploads/2017/02/web-design-services-company-jaipur.jpg">
+                                     </div>
+                                      <div class="carousel-item">
+                                          <img src="https://images-na.ssl-images-amazon.com/images/I/414x5V5aHxL._AC_UL320_SR220,320_.jpg">
+                                     </div>
+                                  </div>
+                                  
+                                  <a class="left carousel-control" href="#courses1" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-left"></span>
+                                      <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#courses1" data-slide="next">
+                                     <span class="glyphicon glyphicon-chevron-right"></span>
+                                     <span class="sr-only">Next</span>
+                                 </a>
+                            </div>                       
+                  
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6" id="edpanel2">
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="edhead2">
+                        	<h2> B.Tech <small>Information Technology</small></h2>
+                    </div>
+                    <div class="panel-body" id="ed2" style="background-image: url('https://static-collegedunia.com/public/college_data/images/appImage/25490_a1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+                        	<h3>Gujarat Technological University, Ahemdabad </h3>
+                            <h3>2011-2015</h3>
+                            <h3>courses</h3>
+                             <div id="courses2" class="carousel sildes"  data-ride="carousel">
+                                <ol class="carousel-indicator" id="it">
+                                    <li data-target="#courses2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#courses2" data-slide-to="1" ></li>
+                                    <li data-target="#courses2" data-slide-to="2" ></li>
+                                    <li data-target="#courses2" data-slide-to="3" ></li>
+                                    <li data-target="#courses2" data-slide-to="4" ></li>
+                                    <li data-target="#courses2" data-slide-to="5" ></li>
+                                </ol>
+                                <div class="carousel-inner" id="inner3">
+                                      <div class="carousel-item active">
+                                          <img src="https://www.sdcpublications.com/images/covers/xl/978-1-63057-219-8.jpg">
+                                     </div>
+                                    <div class="carousel-item">
+                                          <img src="https://www.fintechnews.org/wp-content/uploads/2018/08/mundo-1.jpg">
+                                     </div>
+                                     <div class="carousel-item">
+                                          <img src="https://i.ytimg.com/vi/ztZsEI6C-mI/maxresdefault.jpg">
+                                     </div>
+                                      <div class="carousel-item">
+                                          <img src="https://sg.fiverrcdn.com/photos/121537496/original/ba1ff0b5d1c470fc2aceb4f7dd361666e80d9415.jpg?1544996005">
+                                      </div>
+                                     <div class="carousel-item">
+                                         <img src="https://www.itweb.co.za/static/pictures/2018/05/resized/-fs-Math-2018.xl.jpg">
+                                     </div>
+                                      <div class="carousel-item">
+                                         <img src="https://cdn4.vectorstock.com/i/1000x1000/75/33/dbms-line-art-concept-vector-10657533.jpg">
+                                     </div>
+                                  </div>
+                                  
+                                  <a class="left carousel-control" href="#courses2" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-left"></span>
+                                      <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#courses2" data-slide="next">
+                                     <span class="glyphicon glyphicon-chevron-right"></span>
+                                     <span class="sr-only">Next</span>
+                                 </a>
+                            </div>         
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="goals" class="container-fluid carousel slide">
+            	<h1 class="col-sm-12">Ethics</h1>
+            <ol class="carousel-indicators">
+                <li data-target="#goals" data-slide-to="0"></li>
+                <li data-target="#goals" data-slide-to="1" class="active"></li>
+                <li data-target="#goals" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://www.ecisolutions.com/media/2442559/salesmarketingteamwork-postimage.jpg">
+                    <div class="carousel-caption">
+                        <div class="display-2">
+                            <!--style="color:black"-->TeamWork!
+                            <br>makes Dream Work...</div>
+                        	<h1>We rise by lifting others!</h1>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://sg.fiverrcdn.com/photos/117127428/original/900fe88592dfa9557e6b5592901e433306f3cf8c.jpeg?1536860827">
+                    <div class="carousel-caption">
+                        <div class="display-2">Design is so simple
+                            <br>that's why...</div>
+                        	<h1>It is complicated!</h1>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picjumbo.com/wp-content/uploads/sketching-webdesign-layout-wireframe-ideas_free_stock_photos_picjumbo_HNCK4963-1570x1047.jpg">
+                    <div class="carousel-caption">
+                        <div class="display-2">It always seems
+                            <br>Impossible</div>
+                        	<h1>Until it's done!</h1>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#goals" data-slide="prev">
+                	<span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#goals" data-slide="next">
+                	<span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <div id="projects" class="container-fluid">
+            	<h1 class="col-sm-12"> My Projects </h1>
+            <div class="container-fluid" id="innerinfo">
+                <div id="infobtns">
+
+                    <button class="accordion">Project 1</button>
+                    <div class="panel" id="pane1">
+                        <h3>Transaction Cookies Enhanced Security</h3>
+                    	<a href='https://photos.google.com/share/AF1QipMBTx_EfLYAzOoByf_eBIfNtzKMMLL4tPZkbrEOTVWFrRXm_7sAeokaX8HdPshaBw?key=UnF2QlJQTUQ0Ynl0UExIZklfQzFnRGpqaWVOekhB&source=ctrlq.org'>
+                    	    <img class="col-sm-6" src='https://lh3.googleusercontent.com/1fbJOp60gObMdoEeRKd2Z7W0rnfQmEg6NFFCLNXKM6EHDYWPPuZ8GZi3fgNW9Mn5-vQl-9_w5AHg2f9q094YGP901f186dGdCbuRlZjoMNU0wAoOlmXPoTAkz_b-l2xQwDEF-0SzwyE=w2400' />
+                    	 </a>
+                       
+                        <!-- <p>Our mission is to promote student achievement and preparation for global competitiveness by fostering educational excellence and ensuring equal access</p> -->
+                        <div class="responsive col-sm-6" id="info1">
+                            <p >In this system we maintained the deletion of cookies everytime user generates while navigating to our online shopping website.</p>
+                            <p >Programming in C#</p>
+                            <p>Tools Used - .NET Framework && SQL server database</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion">Project 2</button>
+                    <div class="panel" id="pane2">
+                        	<h3>Game of Checkers</h3>
+                        	<a href='https://photos.google.com/share/AF1QipOxgU9GiR58ZxxsjBPjuwp0MZKFGrVB5pPnuX3pSAkxgtetGjRC58s3pgef4Td4fA?key=WHVwLXhGclYxdG9fVXY5UXpJLWJoZnB1dHFVaUx3&source=ctrlq.org'>
+                        	    <img class="col-sm-6" src='https://lh3.googleusercontent.com/PTx1VnmaprKMa2R94WaE3LXuD14xkI2ivMG08q3RSyTXvqn54igSa8oVl8b3KQUdRe7f-3l-jbyFEr411TFPzb2Tz4Ri_UVKQHRC0ob0y5J8bttw0tJdQBTHIsz0R_X1vIN9F75Y8Sk=w2400' />
+                        	</a>
+                       
+                        <div class="responsive col-sm-6" id="info2">
+                            <p >It is a Simple Game of Checkers on Board which satisfies all the rules of simple checker game such as pieces moves diagonally and if some, can capture the opponent player if in diagonal line,king can move both side and so on.</p>
+                            <p >Programming in Assembly Language</p>
+                            <p >Tools Used - MIPS Architecture</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion">Project 3</button>
+                    <div class="panel" id="pane3">
+                        	<h3>SmartTraveller</h3>
+                        <iframe class=" col-sm-6" src="https://www.youtube.com/embed/cWxP8HaIWl8"></iframe>
+                        <div class="responsive  col-sm-6" id="info3">
+                            <p>The purpose of the application was to make an application for the travellers who wants to explore different places based on his interests.</p>
+                            <p >Programming in Android</p>
+                            <p>Tools Used -Android Studio</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion">Project 4</button>
+                    <div class="panel" id="pane4">
+                        	<h3>TweeterTrailApp</h3>
+                        <iframe class="col-sm-6" src="https://tweetertrailapp.appspot.com/"></iframe>
+                        <div class="responsive col-sm-6" id="info4">
+                            <p >The purpose of the web was simply posting a post and then share the post with the facebook friends in private/in public.</p>
+                            <p >Programming in JavaScript and JSP/Servlet</p>
+                            <p >Tools Used -Eclipse, Google App Engine Datastore, FB JS SDK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="skill" style="background-image: url('https://i.stack.imgur.com/sP7nK.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            	<h1>My Skills</h1>
+
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js">65%</div>
+            </div>
+
+            <p>Json/jquery</p>
+            <div class="container">
+                <div class="skills json">60%</div>
+            </div>
+
+            <p>Assembly</p>
+            <div class="container">
+                <div class="skills assembly">70%</div>
+            </div>
+
+            <p>Android/C/C#</p>
+            <div class="container">
+                <div class="skills CA">45%</div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid bg-secondary" id="contact">
+            <ul class="nav" id="bottomnav">
+                <li class="nav-item">
+                    <a data-toggle="popover" title="Call/Text" data-content="510-565-4846" data-placement="top" data-trigger="hover">
+                        	<i class="material-icons" style="font-size:32px">call</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="popover" title="Email" data-content="atandel3@horizon.csueastbay.edu" data-placement="top" data-trigger="hover">
+                        	<i class="material-icons" style="font-size:32px">email</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="popover" title="Location" data-content="Union city" data-placement="top" data-trigger="hover">
+                        	<i class="material-icons" style="font-size:32px">home</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            function changestyle() {
+                var navstyles = document.getElementById("mainnav").style;
+
+                if (navstyles.marginLeft == '0px' && mavstyles.marginTop == '10px') {
+                    document.getElementById("mainnav").style.marginLeft = '750px';
+                    document.getElementById("mainnav").style.marginTop = '-45px';
+                } else {
+                    document.getElementById("mainnav").style.marginLeft = '0px';
+                    document.getElementById("mainnav").style.marginTop = '10px';
+
+                }
+            }
+        </script>
+        
+        <script>
+            var info = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < info.length; i++) {
+                info[i].addEventListener('click', function() {
+                    this.classList.toggle("active");
+                    var pane = this.nextElementSibling;
+                    if (pane.style.maxHeight) {
+                        pane.style.maxHeight = null;
+                    } else {
+                        pane.style.maxHeight = pane.scrollHeight + "px";
+                    }
+                }, true);
+            }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+
+        <script>
+            window.onscroll = function() {
+                buttondisplay()
+            };
+            function buttondisplay() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("scrollbtn").style.display = "block";
+                } else {
+                    document.getElementById("scrollbtn").style.display = "none";
+                }
+            }
+            function scrolltop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+
+            }
+        </script>
+        
+     <!--   <script type="text/javascript">
+             $(document).ready(function()
+             {
+                 $("#lightSlider").lightSlider(); 
+            });
+        </script>-->
+        
+        <script>
+           function makesmall()
+           {
+            if(document.getElementById("imagedp").style.width == 50%)
+            {
+            document.getElementById("imagedp").style.width = 20vw;
+            }
+            else
+            {
+                
+            }
+        }
+           
+        </script>
+    
+    </body>
+
+</html>
